@@ -10,21 +10,22 @@ module.exports = {
     clean: true,
   },
   module: {
-    rules: [{
-      test: /\.css$/i,
-      use: [MiniCssExtractPlugin.loader, 'css-loader'],
-    },
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env'],
-          plugins: ['@babel/plugin-transform-modules-commonjs'],
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-transform-modules-commonjs'],
+          },
         },
       },
-    },
     ],
   },
   plugins: [
