@@ -1,11 +1,12 @@
 {
     "name": "rpg-game",
     "version": "1.0.0",
-    "description": "RPG Game Development",
+    "description": "RPG Game Development - Итоговое задание",
     "keywords": [
         "game",
         "rpg",
-        "javascript"
+        "javascript",
+        "education"
     ],
     "homepage": "https://github.com/Ksenia-life/Game#readme",
     "bugs": {
@@ -27,7 +28,8 @@
         "lint": "eslint .",
         "start": "webpack serve --open",
         "dev": "webpack serve --mode development",
-        "build:babel": "babel src -d dist"
+        "build:babel": "babel src -d dist",
+        "play": "node -r @babel/register src/js/game.js"
     },
     "devDependencies": {
         "@babel/cli": "^7.28.3",
